@@ -4,12 +4,11 @@ else:
     from .command_cmd import command_cmd
 from pathlib import PurePath
 
-def mkdir(destination = False,obtions = False,debug=False):
-    if (debug):
-        print(destination,obtions)
+def mkdir(destination = False,arguments = False,options={
+    "debug": False
+}):
+    if (options["debug"]):
+        print(destination,arguments)
     if (destination):
         destination = PurePath(destination)
-        return command_cmd(f'mkdir {destination}',obtions)
-    return False
-
-mkdir('./vagina')
+        return command_cmd(f'mkdir {arguments} "{destination}"')
