@@ -1,5 +1,5 @@
 from subprocess import run
 
-def command_cmd(command_):
+def command_powershell(command_):
         #TODO: deberia verificar que si el sistema es windows.
-        return run(f'{command_}',shell=True)    
+        return run(f'powershell {command_}',shell=True) 
