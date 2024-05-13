@@ -29,6 +29,6 @@ from .wt import wt
 from .xcopy import xcopy
 from .mkdir import mkdir
 
-def cmd():
+def CMD():
     # https://ss64.com/nt/cmd.html
     pass

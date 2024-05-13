@@ -1,4 +1,4 @@
-from command_cmd import command_cmd
+from .command_cmd import command_cmd
 
 def echo(text = False):
     """
@@ -9,6 +9,3 @@ def echo(text = False):
     if (text):
         return command_cmd(f'echo {text}')
     return command_cmd("echo")
-
-echo("HOLIS")
-echo()
