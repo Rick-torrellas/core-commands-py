@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def start(arguments = False):
-    return basic_execution("start",arguments)
+def start(arguments=None):
+    return cmd("start",arguments)

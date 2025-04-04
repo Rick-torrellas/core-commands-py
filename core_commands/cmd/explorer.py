@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def explorer(arguments):
-     return basic_execution("explorer",arguments)
+def explorer(arguments=None):
+     return cmd("explorer",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def auditpol(commands):
-    return command_cmd(f"auditpol {commands}")
+def auditpol(arguments = None):
+    return cmd(f"auditpol",f"{arguments}")   # auditpol.exe

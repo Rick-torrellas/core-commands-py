@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def move(arguments):
-    return basic_execution("move",arguments)
+def move(arguments=None):
+    return cmd("move",arguments)

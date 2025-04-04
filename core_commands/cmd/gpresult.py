@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def gpresult(arguments):
-     return basic_execution("gpresult",arguments)
+def gpresult(arguments=None):
+     return cmd("gpresult",arguments)

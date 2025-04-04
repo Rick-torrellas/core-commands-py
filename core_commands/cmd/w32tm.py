@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def w32tm(arguments):
-    return command_cmd(f"w32tm {arguments}")
+def w32tm(arguments=None):
+    return cmd(f"w32tm {arguments}")

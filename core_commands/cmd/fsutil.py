@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def fsutil(arguments):
-     return basic_execution("fsutil",arguments)
+def fsutil(arguments=None):
+     return cmd("fsutil",arguments)

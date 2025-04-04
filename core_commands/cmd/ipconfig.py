@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def ipconfig(arguments):
-     return basic_execution("ipconfig",arguments)
+def ipconfig(arguments=None):
+     return cmd("ipconfig",arguments)

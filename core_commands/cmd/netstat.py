@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def netstat(arguments):
-    return basic_execution("netstat",arguments)
+def netstat(arguments=None):
+    return cmd("netstat",arguments)

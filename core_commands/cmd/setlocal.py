@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def setlocal(arguments):
-    return basic_execution("setlocal",arguments)
+def setlocal(arguments=None):
+    return cmd("setlocal",arguments)

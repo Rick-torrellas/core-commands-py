@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def tree(arguments):
-    return basic_execution("tree",arguments)
+def tree(arguments=None):
+    return cmd("tree",arguments)

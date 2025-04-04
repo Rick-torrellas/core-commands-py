@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def path(arguments):
-    return basic_execution("path",arguments)
+def path(arguments=None):
+    return cmd("path",arguments)

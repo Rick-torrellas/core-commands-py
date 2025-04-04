@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def moveuser(arguments):
-    return basic_execution("moveuser",arguments)
+def moveuser(arguments=None):
+    return cmd("moveuser",arguments)

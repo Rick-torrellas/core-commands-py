@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def sleep(arguments):
-    return basic_execution("sleep",arguments)
+def sleep(arguments=None):
+    return cmd("sleep",arguments)

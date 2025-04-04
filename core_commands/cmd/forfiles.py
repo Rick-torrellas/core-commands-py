@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def forfiles(arguments):
-     return basic_execution("forfiles",arguments)
+def forfiles(arguments=None):
+     return cmd("forfiles",arguments)

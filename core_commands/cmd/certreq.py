@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def certreq(arguments):
-     return basic_execution("certreq",arguments)
+def certreq(arguments =None):
+     return cmd("certreq",f'{arguments}') 

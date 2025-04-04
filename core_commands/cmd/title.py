@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def title(arguments):
-    return basic_execution("title",arguments)
+def title(arguments=None):
+    return cmd("title",arguments)

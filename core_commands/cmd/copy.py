@@ -1,5 +1,5 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def copy(source,destination,sourceArguments = "",destinationArguments = ""):
-    command = f"copy {source} {sourceArguments} {destination} {destinationArguments}"
-    return command_cmd(command)
+def copy(source = "",destination = "",sourceArguments = "",destinationArguments = ""):
+    arguments = f"{source} {sourceArguments} {destination} {destinationArguments}"
+    return cmd("copy",arguments)

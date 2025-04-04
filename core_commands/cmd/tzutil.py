@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def tzutil(arguments):
-    return basic_execution("tzutil",arguments)
+def tzutil(arguments=None):
+    return cmd("tzutil",arguments)

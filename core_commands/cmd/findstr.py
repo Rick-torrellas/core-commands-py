@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def findstr(arguments):
-     return basic_execution("findstr",arguments)
+def findstr(arguments=None):
+     return cmd("findstr",arguments)

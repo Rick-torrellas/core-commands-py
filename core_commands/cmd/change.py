@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def change(arguments):
-     return basic_execution("change",arguments)
+def change(arguments = None):
+     return cmd("change",f"{arguments}")

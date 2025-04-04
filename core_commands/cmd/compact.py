@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def compact(arguments):
-     return basic_execution("compact",arguments)
+def compact(arguments=None):
+     return cmd("compact",arguments)

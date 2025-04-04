@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def dsregcmd(arguments):
-     return basic_execution("dsregcmd",arguments)
+def dsregcmd(arguments=None):
+     return cmd("dsregcmd",arguments)

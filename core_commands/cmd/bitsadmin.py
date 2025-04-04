@@ -1,5 +1,5 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
 # TODO: profundo
-def bitsadmin(arguments):
-    return command_cmd(f"bitsadmin {arguments}")
+def bitsadmin(arguments = None):
+    return cmd(f"bitsadmin",f"{arguments}")

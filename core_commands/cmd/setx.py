@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def setx(arguments):
-    return basic_execution("setx",arguments)
+def setx(arguments=None):
+    return cmd("setx",arguments)

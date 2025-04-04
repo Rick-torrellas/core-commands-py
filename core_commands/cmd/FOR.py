@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def FOR(arguments):
-     return basic_execution("for",arguments)
+def FOR(arguments = None):
+     return cmd("for",arguments)

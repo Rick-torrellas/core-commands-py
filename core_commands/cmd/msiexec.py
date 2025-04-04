@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def msiexec(arguments):
-    return basic_execution('msiexec',arguments)
+def msiexec(arguments=None):
+    return cmd('msiexec',arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def waitfor(arguments):
-    return command_cmd(arguments)
+def waitfor(arguments=None):
+    return cmd(arguments)

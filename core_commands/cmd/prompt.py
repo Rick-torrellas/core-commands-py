@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def prompt(arguments):
-    return basic_execution('propmt',arguments)
+def prompt(arguments=None):
+    return cmd('propmt',arguments)

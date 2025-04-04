@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def qprocess(arguments):
-    return basic_execution("qprocess",arguments)
+def qprocess(arguments=None):
+    return cmd("qprocess",arguments)

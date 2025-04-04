@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def shift(arguments):
-    return basic_execution("shift",arguments)
+def shift(arguments=None):
+    return cmd("shift",arguments)

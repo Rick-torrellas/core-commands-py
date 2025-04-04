@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def sxstrace(arguments):
-    return basic_execution("sxstrace",arguments)
+def sxstrace(arguments=None):
+    return cmd("sxstrace",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def chkntfs(arguments):
-     return basic_execution("chkntfs",arguments)
+def chkntfs(arguments=None):
+     return cmd("chkntfs",arguments)

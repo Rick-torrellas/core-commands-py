@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def ftp(arguments):
-     return basic_execution("ftp",arguments)
+def ftp(arguments=None):
+     return cmd("ftp",arguments)

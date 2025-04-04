@@ -1,5 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def wecutil(arguments):
-    command_base = f"wecutil"
-    return command_cmd(f"{command_base} {arguments}")
+def wecutil(arguments=None):
+    return cmd("wecutil",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def format(arguments):
-     return basic_execution("format",arguments)
+def format(arguments=None):
+     return cmd("format",arguments)

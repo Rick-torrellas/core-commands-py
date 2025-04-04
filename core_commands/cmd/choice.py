@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def choice(arguments):
-     return basic_execution("choice",arguments)
+def choice(arguments=None):
+     return cmd("choice",arguments)

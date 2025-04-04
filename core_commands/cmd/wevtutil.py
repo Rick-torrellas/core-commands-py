@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def wevtutil(arguments):
-    return command_cmd(f"wevtutil {arguments}")
+def wevtutil(arguments=None):
+    return cmd(f"wevtutil {arguments}")

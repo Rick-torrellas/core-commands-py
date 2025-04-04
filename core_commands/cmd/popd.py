@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def popd(arguments):
-    return basic_execution("popd",arguments)
+def popd(arguments=None):
+    return cmd("popd",arguments)

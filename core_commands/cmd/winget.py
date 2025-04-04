@@ -1,6 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def winget(command,options = False):
-    if(options):
-        return command_cmd(f"winget {command} {options}")
-    return command_cmd(f"winget {command}")
+def winget(arguments=None):
+    return cmd(f"winget",arguments)

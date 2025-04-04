@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def fc(arguments):
-     return basic_execution("fc",arguments)
+def fc(arguments=None):
+     return cmd("fc",arguments)

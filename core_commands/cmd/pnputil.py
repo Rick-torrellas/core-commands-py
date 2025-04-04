@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def pnputil(arguments):
-    return basic_execution("pnputil",arguments)
+def pnputil(arguments=None):
+    return cmd("pnputil",arguments)

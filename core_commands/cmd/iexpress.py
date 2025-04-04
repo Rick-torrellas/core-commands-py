@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def iexpress(arguments):
-     return basic_execution("iexpress",arguments)
+def iexpress(arguments=None):
+     return cmd("iexpress",arguments)

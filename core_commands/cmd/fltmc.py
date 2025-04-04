@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def fltmc(arguments):
-     return basic_execution("fltmc",arguments)
+def fltmc(arguments=None):
+     return cmd("fltmc",arguments)

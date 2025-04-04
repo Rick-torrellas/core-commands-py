@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def displayswitch(arguments):
-     return basic_execution("displayswitch",arguments)
+def displayswitch(arguments=None):
+     return cmd("displayswitch",arguments)

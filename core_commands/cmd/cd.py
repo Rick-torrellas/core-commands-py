@@ -1,7 +1,7 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def cd(pathname,arguments = False):
+def cd(arguments=None):
     """
     Change Directory - Select a Folder (and drive)
     """
-    command_cmd(f"cd {arguments} {pathname}")
+    return cmd("cd",f'{arguments}')  # type: ignore

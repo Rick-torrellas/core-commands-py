@@ -1,6 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def winrm(arguments):
-    if arguments:
-        return command_cmd(f"winrm {arguments}")
-    return command_cmd("winrm")
+def winrm(arguments=None):
+    return cmd("winrm",arguments)

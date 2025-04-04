@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def net(arguments):
-    return basic_execution("net",arguments)
+def net(arguments=None):
+    return cmd("net",arguments)

@@ -1,8 +1,8 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def curl(arguments,url):
+def curl(opciones,url):
     """
     Transfer data from or to a server, using one of the supported protocols (HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, DICT, TELNET, LDAP or FILE). 
     """
-    command = f"curl {arguments} {url}"
-    return command_cmd(command)
+    arguments = f"{opciones} {url}"
+    return cmd("curl",arguments)

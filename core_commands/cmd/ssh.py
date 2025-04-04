@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def ssh(arguments):
-    return basic_execution("ssh",arguments)
+def ssh(arguments=None):
+    return cmd("ssh",arguments)

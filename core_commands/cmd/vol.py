@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def vol(arguments):
-    return basic_execution("vol",arguments)
+def vol(arguments=None):
+    return cmd("vol",arguments)

@@ -1,7 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def xcopy(source,destination,arguments):
-    command_base = "xcopy"
-    if (arguments):
-        return command_cmd(f"{command_base} {source} {destination} {arguments}")
-    return command_cmd(f"{command_base} {source} {destination}")
+def xcopy(arguments=None):
+    return cmd("xcopy",arguments)

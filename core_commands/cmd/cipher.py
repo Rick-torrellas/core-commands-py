@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def cipher(arguments):
-     return basic_execution("cipher",arguments)
+def cipher(arguments=None):
+     return cmd("cipher",arguments)

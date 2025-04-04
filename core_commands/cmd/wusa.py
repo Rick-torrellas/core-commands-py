@@ -1,6 +1,5 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def wusa(arguments):
-    if (arguments):
-        command_cmd(f"wusa {arguments}")
+def wusa(arguments=None):
+    return cmd("wusa",arguments)
     

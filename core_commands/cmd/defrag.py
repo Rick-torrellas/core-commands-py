@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def defrag(arguments):
-     return basic_execution("defrag",arguments)
+def defrag(arguments=None):
+     return cmd("defrag",arguments)

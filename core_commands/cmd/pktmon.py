@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def pktmon(arguments):
-    return basic_execution("pktmon",arguments)
+def pktmon(arguments=None):
+    return cmd("pktmon",arguments)

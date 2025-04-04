@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def manage_bde(arguments):
-    return basic_execution("manage-bde",arguments)  
+def manage_bde(arguments=None):
+    return cmd("manage-bde",arguments)  

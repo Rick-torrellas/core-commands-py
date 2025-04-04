@@ -1,6 +1,8 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-# TODO: como no entiendo el comando y me da flojera, no pude hacer el comando en profundidad.
-
-def arp(arguments):
-    return command_cmd(f"arp {arguments}")
+def arp(arguments = None):
+    command = [
+        "arp",
+        arguments
+    ]
+    return cmd(command)

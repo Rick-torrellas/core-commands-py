@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def mbr2gpt(arguments):
-    return basic_execution("mbr2gpt",arguments)
+def mbr2gpt(arguments=None):
+    return cmd("mbr2gpt",arguments)

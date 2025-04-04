@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def driverquery(arguments):
-     return basic_execution("driverquery",arguments)
+def driverquery(arguments=None):
+     return cmd("driverquery",arguments)

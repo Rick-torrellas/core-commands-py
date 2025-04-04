@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def erase(arguments):
-     return basic_execution("erase",arguments)
+def erase(arguments=None):
+     return cmd("erase",arguments)

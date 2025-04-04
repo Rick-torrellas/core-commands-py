@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def exit(arguments):
-     return basic_execution("exit",arguments)
+def exit(arguments=None):
+     return cmd("exit",arguments)

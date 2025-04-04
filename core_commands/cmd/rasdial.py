@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def rasdial(arguments):
-    return basic_execution("rasdial",arguments)
+def rasdial(arguments=None):
+    return cmd("rasdial",arguments)

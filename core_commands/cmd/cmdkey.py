@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def cmdkey(arguments):
-     return basic_execution("cmdkey",arguments)
+def cmdkey(arguments=None):
+     return cmd("cmdkey",arguments)

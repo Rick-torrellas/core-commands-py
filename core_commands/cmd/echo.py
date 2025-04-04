@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
 def echo(text = False):
     """
@@ -6,6 +6,5 @@ def echo(text = False):
 
     arguments: ON | OFF | /?
     """
-    if (text):
-        return command_cmd(f'echo {text}')
-    return command_cmd("echo")
+    arguments=text
+    return cmd("echo",arguments)

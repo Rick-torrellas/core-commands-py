@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def regedit(arguments):
-    return basic_execution("regedit",arguments)
+def regedit(arguments=None):
+    return cmd("regedit",arguments)

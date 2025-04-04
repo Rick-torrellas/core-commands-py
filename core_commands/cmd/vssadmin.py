@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def vssadmin(arguments):
-    return basic_execution("vssadmin",arguments)
+def vssadmin(arguments=None):
+    return cmd("vssadmin",arguments)

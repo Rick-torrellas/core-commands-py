@@ -1,6 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def wuauclt(arguments = False):
-    if arguments:
-        return command_cmd(f'wuauclt {arguments}')
-    return command_cmd('wuauclt')
+def wuauclt(arguments = None):
+    return cmd('wuauclt',arguments)

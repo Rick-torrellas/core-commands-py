@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def makecab(arguments):
-    return basic_execution("makecab",arguments)
+def makecab(arguments=None):
+    return cmd("makecab",arguments)

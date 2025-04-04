@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def typeperf(arguments):
-    return basic_execution("typeperf",arguments)
+def typeperf(arguments=None):
+    return cmd("typeperf",arguments)

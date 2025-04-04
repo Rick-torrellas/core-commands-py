@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def systeminfo(arguments):
-    return basic_execution("systeminfo",arguments)
+def systeminfo(arguments=None):
+    return cmd("systeminfo",arguments)

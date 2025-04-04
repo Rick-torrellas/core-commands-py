@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def rundll32(arguments):
-    return basic_execution("rundll32",arguments)
+def rundll32(arguments=None):
+    return cmd("rundll32",arguments)

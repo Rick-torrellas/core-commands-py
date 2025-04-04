@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def tracert(arguments):
-    return basic_execution("tracert",arguments)
+def tracert(arguments=None):
+    return cmd("tracert",arguments)

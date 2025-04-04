@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def convert(arguments):
-     return basic_execution("convert",arguments)
+def convert(arguments=None):
+     return cmd("convert",arguments)

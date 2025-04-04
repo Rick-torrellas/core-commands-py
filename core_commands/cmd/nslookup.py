@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def nslookup(arguments):
-    return basic_execution("nslookup",arguments)
+def nslookup(arguments=None):
+    return cmd("nslookup",arguments)

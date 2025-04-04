@@ -1,6 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def BREAK(rest = False):
-    if rest:
-        return command_cmd(f"break {rest}")
-    return command_cmd("break")
+def BREAK(arguments = None):
+    return cmd('break', f"{arguments}") 

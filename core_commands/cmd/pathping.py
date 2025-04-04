@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def pathping(arguments):
-    return basic_execution("pathping",arguments)
+def pathping(arguments=None):
+    return cmd("pathping",arguments)

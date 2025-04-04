@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def logoff(arguments):
-    return basic_execution("logoff",arguments)
+def logoff(arguments=None):
+    return cmd("logoff",arguments)

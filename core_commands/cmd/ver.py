@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
 def ver():
-    return command_cmd("ver")
+    return cmd("ver")

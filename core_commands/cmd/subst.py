@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def subst(arguments = False):
-    return basic_execution("subst",arguments)
+def subst(arguments=None):
+    return cmd("subst",arguments)

@@ -1,6 +1,6 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
 # TODO: este comando es mas profundo
 
-def bcdboot(arguments):
-    return command_cmd(f"bcdboot {arguments}")
+def bcdboot(arguments = None):
+    return cmd(f"bcdboot",f"{arguments}")

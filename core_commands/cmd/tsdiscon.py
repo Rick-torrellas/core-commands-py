@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def tsdiscon(arguments):
-    return basic_execution("tsdiscon",arguments)
+def tsdiscon(arguments=None):
+    return cmd("tsdiscon",arguments)

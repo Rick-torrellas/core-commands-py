@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def cleanmgr(arguments):
-     return basic_execution("cleanmgr",arguments)
+def cleanmgr(arguments=None):
+     return cmd("cleanmgr",arguments)

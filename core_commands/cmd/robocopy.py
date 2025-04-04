@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def robocopy(arguments):
-    return basic_execution("robocopy",arguments)
+def robocopy(arguments=None):
+    return cmd("robocopy",arguments)

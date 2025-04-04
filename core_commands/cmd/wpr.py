@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def wpr(arguments):
-    return command_cmd(f"wpr {arguments}")
+def wpr(arguments=None):
+    return cmd(f"wpr",arguments)

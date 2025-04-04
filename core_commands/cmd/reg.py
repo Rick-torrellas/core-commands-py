@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def reg(arguments):
-    return basic_execution("reg",arguments)
+def reg(arguments=None):
+    return cmd("reg",arguments)

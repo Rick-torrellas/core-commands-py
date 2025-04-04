@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def ren(arguments):
-    return basic_execution("ren",arguments)
+def ren(arguments=None):
+    return cmd("ren",arguments)

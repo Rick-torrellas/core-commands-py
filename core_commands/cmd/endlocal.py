@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def endlocal(arguments):
-     return basic_execution("endlocal",arguments)
+def endlocal(arguments=None):
+     return cmd("endlocal",arguments)

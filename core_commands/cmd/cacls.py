@@ -1,6 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def cacls(pathname,arguments = False):
-    if arguments:
-        return command_cmd(f"cacls {pathname} {arguments}")
-    return command_cmd(f"cacls {pathname}")
+def cacls(arguments = None):
+    return cmd("cacls",f"{arguments}")

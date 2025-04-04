@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def pushd(arguments):
-    return basic_execution("pushd",arguments)
+def pushd(arguments=None):
+    return cmd("pushd",arguments)

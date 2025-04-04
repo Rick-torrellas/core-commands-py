@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def rd(arguments):
-    return basic_execution("rd",arguments)
+def rd(arguments=None):
+    return cmd("rd",arguments)

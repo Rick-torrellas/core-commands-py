@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def msinfo32(arguments):
-    return basic_execution('msinfo32',arguments)
+def msinfo32(arguments=None):
+    return cmd('msinfo32',arguments)

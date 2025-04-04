@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def msg(arguments):
-    return basic_execution("msg",arguments)
+def msg(arguments=None):
+    return cmd("msg",arguments)

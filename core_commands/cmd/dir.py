@@ -1,7 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def dir(pathname,arguments,options={
-    "debug": False
-}):
-    if(pathname):
-        command_cmd(f"dir {pathname} {arguments}")
+def dir(arguments = None):
+    return cmd("dir",arguments)

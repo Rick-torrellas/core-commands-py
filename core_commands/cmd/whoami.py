@@ -1,7 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def whoami(arguments = False):
-    command_base = f"whoami"
-    if(arguments):
-        return command_cmd(f"{command_base} {arguments}")
-    return command_cmd(command_base)
+def whoami(arguments = None):
+    return cmd("whoami",arguments)

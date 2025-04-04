@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def openfiles(arguments):
-    return basic_execution("openfiles",arguments)
+def openfiles(arguments=None):
+    return cmd("openfiles",arguments)

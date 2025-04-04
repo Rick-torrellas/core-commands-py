@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def mstsc(arguments):
-    return basic_execution("mstsc",arguments)
+def mstsc(arguments=None):
+    return cmd("mstsc",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def pause(arguments):
-    return basic_execution('pause',arguments)
+def pause(arguments=None):
+    return cmd('pause',arguments)

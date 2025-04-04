@@ -1,1 +1,0 @@
-" Agarra cualquier archivo de una carpeta "

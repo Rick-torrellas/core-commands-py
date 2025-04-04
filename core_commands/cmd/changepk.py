@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def changepk(arguments):
-     return basic_execution("changepk",arguments)
+def changepk(arguments=None):
+     return cmd("changepk",f'{arguments}')

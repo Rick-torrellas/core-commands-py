@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def timeout(arguments):
-    return basic_execution("timeout",arguments)
+def timeout(arguments=None):
+    return cmd("timeout",arguments)

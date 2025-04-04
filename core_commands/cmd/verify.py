@@ -1,6 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def verify(onOff):
-    if (onOff):
-        return command_cmd(f"verify {onOff}")
-    return command_cmd("verify")
+def verify(arguments=None):
+    return cmd("verify",arguments)

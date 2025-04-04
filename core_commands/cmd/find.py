@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def find(arguments):
-     return basic_execution("find",arguments)
+def find(arguments=None):
+     return cmd("find",arguments)

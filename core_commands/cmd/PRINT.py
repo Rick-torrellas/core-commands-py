@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def PRINT(arguments):
-    return basic_execution("print",arguments)
+def PRINT(arguments=None):
+    return cmd("print",arguments)

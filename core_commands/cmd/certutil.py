@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def certutil(arguments):
-     return basic_execution("certutil",arguments)
+def certutil(arguments = None):
+     return cmd("certutil",f'{arguments}')

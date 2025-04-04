@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def type(arguments):
-    basic_execution("type",arguments)
+def type(arguments=None):
+    baxh("type",arguments)

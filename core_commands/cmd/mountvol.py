@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def mountvol(arguments):
-    return basic_execution("mountvol",arguments)
+def mountvol(arguments=None):
+    return cmd("mountvol",arguments)

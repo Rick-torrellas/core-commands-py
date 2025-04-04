@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def replace(arguments):
-    return basic_execution("replace",arguments)
+def replace(arguments=None):
+    return cmd("replace",arguments)

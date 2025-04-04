@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def setspn(arguments):
-    return basic_execution("setspn",arguments)
+def setspn(arguments=None):
+    return cmd("setspn",arguments)

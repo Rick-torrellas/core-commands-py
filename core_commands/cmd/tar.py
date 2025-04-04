@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def tar(arguments):
-    return basic_execution("tar",arguments)
+def tar(arguments=None):
+    return cmd("tar",arguments)

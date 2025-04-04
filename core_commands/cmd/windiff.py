@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def windiff(path1,path2):
-    return command_cmd(f"windiff {path1} {path2}")
+def windiff(arguments=None):
+    return cmd(f"windiff",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def scriptrunner(arguments):
-    return basic_execution("scriptrunner",arguments)
+def scriptrunner(arguments=None):
+    return cmd("scriptrunner",arguments)

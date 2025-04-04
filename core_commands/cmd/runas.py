@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def runas(arguments):
-    return basic_execution("runas",arguments)
+def runas(arguments=None):
+    return cmd("runas",arguments)

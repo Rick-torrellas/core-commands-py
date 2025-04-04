@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def esentutl(arguments):
-     return basic_execution("esentutl",arguments)
+def esentutl(arguments=None):
+     return cmd("esentutl",arguments)

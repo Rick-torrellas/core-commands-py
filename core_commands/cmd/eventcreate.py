@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def eventcreate(arguments):
-     return basic_execution("eventcreate",arguments)
+def eventcreate(arguments=None):
+     return cmd("eventcreate",arguments)

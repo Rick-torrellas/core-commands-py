@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def sfc(arguments):
-    return basic_execution("sfc",arguments)
+def sfc(arguments=None):
+    return cmd("sfc",arguments)

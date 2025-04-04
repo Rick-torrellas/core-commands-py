@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def gpupdate(arguments):
-     return basic_execution("gpupdate",arguments)
+def gpupdate(arguments=None):
+     return cmd("gpupdate",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def clip(arguments):
-     return basic_execution("clip",arguments)
+def clip(arguments=None):
+     return cmd("clip",arguments)

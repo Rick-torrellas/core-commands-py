@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def powercfg(arguments):
-    return basic_execution("powercfg",arguments)
+def powercfg(arguments=None):
+    return cmd("powercfg",arguments)

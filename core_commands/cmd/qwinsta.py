@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def qwinsta(arguments):
-    return basic_execution("qwinsta",arguments)
+def qwinsta(arguments=None):
+    return cmd("qwinsta",arguments)

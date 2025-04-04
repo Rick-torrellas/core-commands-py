@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def regsvr32(arguments):
-    return basic_execution("regsvr32",arguments)
+def regsvr32(arguments=None):
+    return cmd("regsvr32",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def taskkill(arguments):
-    return basic_execution("taskkill",arguments)
+def taskkill(arguments=None):
+    return cmd("taskkill",arguments)

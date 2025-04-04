@@ -1,3 +1,5 @@
+from ..bin.cmd import cmd
+
 from .arp import arp
 from .assoc import assoc
 from .attrib import attrib
@@ -12,7 +14,7 @@ from .cd import cd
 from .certreq import certreq
 from .certutil import certutil
 from .change import change
-from changepk import changepk
+from .changepk import changepk
 from .chcp import chcp
 from .chdir import chdir
 from .chkdsk import chkdsk
@@ -24,7 +26,7 @@ from .clip import clip
 from .cls import cls
 from .cmdkey import cmdkey
 from .color import color
-from .command_cmd import command_cmd
+from .cmd import CMD
 from .comp import comp
 from .compact import compact
 from .convert import convert
@@ -181,6 +183,7 @@ from .wuauclt import wuauclt
 from .wusa import wusa
 from .xcopy import xcopy
 
-def CMD():
+def CMD(arguments=None):
     # https://ss64.com/nt/cmd.html
+    return cmd("cmd",arguments)
     pass

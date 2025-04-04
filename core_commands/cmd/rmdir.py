@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def rmdir(arguments):
-    return basic_execution("rmdir",arguments)
+def rmdir(arguments=None):
+    return cmd("rmdir",arguments)

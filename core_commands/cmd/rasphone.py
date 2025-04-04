@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def rasphone(arguments):
-    return basic_execution("rasphone",arguments)
+def rasphone(arguments=None):
+    return cmd("rasphone",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def more(arguments):
-    return basic_execution("more",arguments)
+def more(arguments=None):
+    return cmd("more",arguments)

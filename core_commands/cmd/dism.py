@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def dism(arguments):
-     return basic_execution("dism",arguments)
+def dism(arguments=None):
+     return cmd("dism",arguments)

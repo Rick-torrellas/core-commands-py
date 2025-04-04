@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def regini(arguments):
-    return basic_execution("regini",arguments)
+def regini(arguments=None):
+    return cmd("regini",arguments)

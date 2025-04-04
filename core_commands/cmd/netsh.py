@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def netsh(arguments):
-    return basic_execution("netsh",arguments)
+def netsh(arguments=None):
+    return cmd("netsh",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def goto(arguments):
-     return basic_execution("goto",arguments)
+def goto(arguments=None):
+     return cmd("goto",arguments)

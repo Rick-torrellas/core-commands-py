@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def chkdsk(arguments):
-     return basic_execution("chkdsk",arguments)
+def chkdsk(arguments=None):
+     return cmd("chkdsk",arguments)

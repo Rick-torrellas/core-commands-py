@@ -1,2 +1,1 @@
-cREAR UNA FUNCION QUE verifique mediante un array, si se usaron los argumentos correctos para la funcion.
-Si no lanza un error.
+* vbscript|node|deno|bun: se puede usar el comando en batch cscript, para ejecutar scripts .vbs o scripts de vbscript, esto puede ayudar a pasar los comandos de vbscript a python, al crear script donde ejecute un solo comando y devuelva su errorcode.

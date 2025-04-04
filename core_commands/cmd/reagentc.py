@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def reagentc(arguments):
-    return basic_execution("reagentc",arguments)
+def reagentc(arguments=None):
+    return cmd("reagentc",arguments)

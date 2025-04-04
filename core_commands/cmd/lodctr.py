@@ -1,4 +1,4 @@
-from .command_cmd import basic_execution
+from ..bin.cmd import cmd
 
-def lodctr(arguments):
-    return basic_execution("lodctr",arguments)
+def lodctr(arguments=None):
+    return cmd("lodctr",arguments)

@@ -1,4 +1,4 @@
-from .command_cmd import command_cmd
+from ..bin.cmd import cmd
 
-def cls():
-    command_cmd("cls")
+def cls(arguments=None):
+    baxh("cls",arguments)
