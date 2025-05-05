@@ -1,4 +1,4 @@
-from ..bin.command_list import cmd_commands
+from .command_list_cmd import cmd_commands
 
 def _validateArguments(arguments):
     if arguments == "None":

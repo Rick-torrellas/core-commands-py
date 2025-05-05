@@ -185,5 +185,5 @@ from .xcopy import xcopy
 
 def CMD(arguments=None):
     # https://ss64.com/nt/cmd.html
-    return cmd("cmd",arguments)
+    return cmd(arguments)
     pass
