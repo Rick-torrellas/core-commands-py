@@ -1,3 +1,3 @@
-from .batch import batch
-from .bin import baxh
-from .bin import powershell
+from . import cmd
+
+__all__ = ["cmd"]

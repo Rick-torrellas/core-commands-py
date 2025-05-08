@@ -1,10 +1,8 @@
 from subprocess import run
-from .shell_run import shell
-from ._validate import _validateArguments
+from .shell import shell_open,no_shell,no_shell_open,shell_run
 
-def powershell(command,arguments):
-        full_command=None
-        if _validateArguments(arguments):
-                full_command = f"{command} {arguments}"
-                return shell(["powershell", "-Command", full_command],arguments)
-        full_command = command
+
+def powershell(command):
+        
+        return shell(["powershell", "-Command", full_command],arguments)
+        

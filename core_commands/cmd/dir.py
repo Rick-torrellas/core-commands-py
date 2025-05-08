@@ -1,4 +1,4 @@
 from ..bin.cmd import cmd
 
-def dir(arguments = None):
+def DIR(arguments = None):
     return cmd("dir",arguments)

@@ -1,4 +1,4 @@
 from ..bin.cmd import cmd
 
-def exit(arguments=None):
+def EXIT(arguments=None):
      return cmd("exit",arguments)

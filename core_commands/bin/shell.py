@@ -3,6 +3,10 @@ from ..models.Command import Command
 from sys import stdin,stderr
 from threading import Thread
 
+#TODO: crear un validador para command, 
+#   1 verifica el tipo, puede ser string y lista,
+#   2 verifica que no este vacio|None tanto la string como la lista 
+
 def shell_run(command):
     process = run(command,
                     capture_output=True,
